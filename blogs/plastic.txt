@@ -1,0 +1,9 @@
+<title>关于废塑料回收</title>
+<date>2026/2/14</date>
+<author>尉钰涵 唐泽霖 辛敏睿 孟禹萌 张若凡</author>
+<tag>绿色化学,科普</tag>
+<cover>blogs/illustr/plastic-c.jpg</cover>
+<header>blogs/illustr/plastic-h.jpg</header>
+<intro></intro>
+<main>
+</main>

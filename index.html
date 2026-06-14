@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Chemistry | 二附化学社官网</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <style>
+        :root {
+            --bg-page: #f7f8fa;
+            --bg-surface: #ffffff;
+            --bg-banner: #e8f2f1;
+            --bg-nav-hover: #f0f4f3;
+            --bg-card: #ffffff;
+            --text-primary: #1a1f2e;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --text-on-banner: #0f3d3a;
+            --text-on-banner-secondary: #2d5a56;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e0;
+            --border-accent: #b2d4d2;
+            --accent-teal: #0d9488;
+            --accent-teal-light: #14b8a6;
+            --accent-amber: #d97706;
+            --accent-amber-light: #f59e0b;
+            --safety-blue: #2563eb;
+            --space-xs: 6px;
+            --space-sm: 12px;
+            --space-md: 20px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            --space-3xl: 80px;
+            --space-4xl: 100px;
+            --font-sans: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+            --font-size-xs: 0.78rem;
+            --font-size-sm: 0.88rem;
+            --font-size-base: 0.98rem;
+            --font-size-md: 1.08rem;
+            --font-size-lg: 1.35rem;
+            --font-size-xl: 2rem;
+            --font-size-2xl: 2.8rem;
+            --radius-xs: 2px;
+            --radius-sm: 3px;
+            --radius-md: 4px;
+            --radius-lg: 8px;
+            --transition-fast: 0.18s ease;
+            --transition-smooth: 0.25s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle, rgba(13, 148, 136, 0.06) 1px, transparent 1px);
+            background-size: 28px 28px;
+            background-position: 0 0;
+        }
+        .site-wrapper { position: relative; overflow: hidden; }
+
+        /* HEADER */
+        .site-header {
+            position: sticky; top: 0; z-index: 1000;
+            background-color: var(--bg-surface);
+            border-bottom: 1px solid var(--border-light);
+            height: 62px; display: flex; align-items: center;
+        }
+        .header-inner {
+            max-width: 1280px; width: 100%; margin: 0 auto; padding: 0 32px;
+            display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 100%;
+        }
+        .logo-area { display: flex; align-items: center; gap: 10px; flex-shrink: 0; text-decoration: none; color: var(--text-primary); }
+        .logo-icon { width: 36px; height: 36px; flex-shrink: 0; object-fit: contain; border: none; border-radius: 6px; transition: opacity var(--transition-fast); }
+        .logo-area:hover .logo-icon { opacity: 0.8; }
+        .logo-text { font-size: 1.15rem; font-weight: 700; letter-spacing: 0.3px; color: var(--text-primary); white-space: nowrap; transition: color var(--transition-fast); }
+        .logo-area:hover .logo-text { color: var(--accent-teal); }
+        .main-nav { display: flex; align-items: center; gap: 2px; list-style: none; flex-wrap: nowrap; height: 100%; }
+        .main-nav li { height: 100%; display: flex; align-items: center; }
+        .main-nav a {
+            display: flex; align-items: center; padding: 8px 14px; text-decoration: none;
+            color: var(--text-secondary); font-size: var(--font-size-sm); font-weight: 500;
+            letter-spacing: 0.2px; white-space: nowrap; border-radius: var(--radius-xs);
+            border-bottom: 2px solid transparent; transition: all var(--transition-fast);
+            height: 100%; position: relative; top: 1px;
+        }
+        .main-nav a:hover { color: var(--accent-teal); background-color: var(--bg-nav-hover); border-bottom-color: var(--accent-teal); }
+        .mobile-menu-trigger { display: none; background: none; border: 1px solid var(--border-light); cursor: pointer; padding: 7px 9px; flex-direction: column; gap: 4px; z-index: 1001; border-radius: var(--radius-xs); transition: border-color var(--transition-fast); }
+        .mobile-menu-trigger:hover { border-color: var(--accent-teal); }
+        .mobile-menu-trigger span { display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 1px; transition: all var(--transition-fast); }
+
+        /* BANNER */
+        .banner-section {
+            position: relative; width: 100%; min-height: 440px; display: flex; align-items: center; justify-content: center; overflow: hidden;
+            background-color: var(--bg-banner);
+            background-image:
+                radial-gradient(circle at 78% 22%, rgba(13,148,136,0.07) 0%, rgba(13,148,136,0.07) 120px, transparent 121px),
+                radial-gradient(circle at 18% 72%, rgba(217,119,6,0.05) 0%, rgba(217,119,6,0.05) 70px, transparent 71px),
+                radial-gradient(circle at 62% 58%, rgba(13,148,136,0.04) 0%, rgba(13,148,136,0.04) 4px, transparent 5px),
+                radial-gradient(circle at 64% 60%, rgba(13,148,136,0.04) 0%, rgba(13,148,136,0.04) 3px, transparent 4px),
+                radial-gradient(circle at 60% 56%, rgba(13,148,136,0.04) 0%, rgba(13,148,136,0.04) 3px, transparent 4px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+            background-position: center; background-repeat: no-repeat;
+            border-bottom: 1px solid var(--border-accent);
+        }
+        .banner-section::before {
+            content: ''; position: absolute; pointer-events: none; z-index: 1;
+            top: 50px; right: 60px; width: 100px; height: 115px;
+            border: 1.5px solid rgba(13,148,136,0.12); border-radius: 4px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); opacity: 0.6;
+        }
+        .banner-section::after {
+            content: ''; position: absolute; pointer-events: none; z-index: 1;
+            bottom: 40px; left: 50px; width: 70px; height: 80px;
+            border: 1.5px solid rgba(217,119,6,0.1); border-radius: 4px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); opacity: 0.5;
+        }
+        .banner-content {
+            position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between;
+            gap: 40px; padding: 50px 36px; max-width: 1000px; width: 100%; margin: 0 auto;
+        }
+        .banner-text { text-align: left; flex: 1 1 auto; }
+        .banner-main-title {
+            font-size: var(--font-size-2xl); font-weight: 800; letter-spacing: 0.8px; line-height: 1.3;
+            margin-bottom: 14px; color: var(--text-on-banner); position: relative;
+        }
+        .title-chem { color: var(--accent-amber); font-weight: 800; letter-spacing: 1px; }
+        .banner-main-title::after {
+            content: ''; display: block; width: 60px; height: 3px; margin-top: 8px;
+            background-color: var(--accent-teal-light); border-radius: 1px; opacity: 0.8;
+        }
+        .banner-subtitle { font-size: var(--font-size-md); font-weight: 400; letter-spacing: 0.5px; color: var(--text-on-banner-secondary); margin-top: 6px; }
+        .banner-logo-img {
+            flex-shrink: 0; width: 180px; height: 180px; object-fit: contain;
+            border-radius: 12px; border: none; transition: opacity var(--transition-smooth);
+        }
+        .banner-logo-img:hover { opacity: 0.85; }
+
+        .content-wrapper { position: relative; z-index: 2; }
+        .decor-layer {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none; z-index: 1; overflow: hidden;
+        }
+        .decor-layer svg { width: 100%; height: 100%; }
+        .decor-bubble {
+            position: absolute; border-radius: 50%; background: rgba(13,148,136,0.06);
+            border: 1px solid rgba(13,148,136,0.15); pointer-events: none;
+        }
+        .decor-molecule {
+            position: absolute; width: 22px; height: 22px;
+            border: 2px solid rgba(13,148,136,0.18); border-radius: 50%; pointer-events: none;
+        }
+        .decor-molecule::before {
+            content: ''; position: absolute; top: 50%; left: 50%;
+            width: 8px; height: 2px; background: rgba(13,148,136,0.2);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .intro-section {
+            position: relative; z-index: 2; max-width: 780px; margin: 0 auto;
+            padding: var(--space-xl) 36px var(--space-lg); text-align: center;
+        }
+        .intro-section::before {
+            content: ''; display: block; width: 50px; height: 3px; margin: 0 auto 28px;
+            background-color: var(--accent-teal); border-radius: 1px; opacity: 0.7;
+        }
+        .intro-text { font-size: var(--font-size-base); line-height: 1.9; color: var(--text-secondary); letter-spacing: 0.2px; max-width: 680px; margin: 0 auto; }
+
+        .illustration-section {
+            position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;
+            padding: 20px 36px 60px;
+        }
+        .illustration-container { position: relative; width: 100%; min-height: 550px; }
+        .pentagon-wrapper {
+            position: absolute; width: 90%; aspect-ratio: 1/1;
+            left: 50%; top: 60%; transform: translate(-50%, -50%);
+        }
+        .pentagon-img {
+            position: absolute; width: 32%; aspect-ratio: 16 / 9;
+            object-fit: cover; border-radius: var(--radius-lg);
+            border: 2px solid var(--border-light);
+            transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03); z-index: 2; background-color: #f0f4f3;
+            transform: translate(-50%, -50%);
+        }
+        .pentagon-img:hover {
+            transform: translate(-50%, -50%) scale(1.06);
+            border-color: var(--accent-teal);
+            box-shadow: 0 6px 18px rgba(13,148,136,0.12);
+            z-index: 5;
+        }
+
+        /* 椭圆连接线 */
+        .connector-ellipse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .mobile-illustration-grid { display: none; }
+
+        .section-divider {
+            max-width: 1280px; margin: var(--space-4xl) auto var(--space-lg);
+            padding: 0 32px; border-top: 1px solid var(--border-medium); opacity: 0.7; height: 0;
+        }
+
+        .safety-section {
+            position: relative; z-index: 2; max-width: 980px;
+            margin: var(--space-3xl) auto var(--space-2xl);
+            padding: 0 36px; display: flex; gap: 40px;
+            justify-content: center; flex-wrap: wrap;
+        }
+        .safety-card {
+            position: relative; background-color: var(--bg-card); border: 1px solid var(--border-light);
+            border-left: 4px solid var(--safety-blue); border-radius: var(--radius-md); padding: 30px 34px;
+            flex: 1 1 300px; max-width: 460px; transition: border-color var(--transition-smooth);
+            display: flex; flex-direction: column; justify-content: flex-start;
+        }
+        .safety-card:hover { border-color: var(--border-medium); border-left-color: #1d4ed8; }
+        .safety-title {
+            font-size: var(--font-size-lg); font-weight: 700; letter-spacing: 0.4px;
+            color: var(--text-primary); margin-bottom: 12px; position: relative;
+            display: inline-block; align-self: flex-start;
+        }
+        .safety-text { font-size: var(--font-size-sm); line-height: 1.85; color: var(--text-secondary); letter-spacing: 0.2px; position: relative; z-index: 1; margin-top: 4px; }
+
+        .site-footer {
+            position: relative; z-index: 2; border-top: 1px solid var(--border-light);
+            padding: 24px 32px; max-width: 1280px; margin: var(--space-3xl) auto 0;
+            background-color: var(--bg-page);
+        }
+        .footer-inner { display: flex; justify-content: flex-start; align-items: center; }
+        .copyright { font-size: var(--font-size-xs); color: var(--text-muted); letter-spacing: 0.2px; }
+
+        @media (max-width: 1050px) {
+            .header-inner { padding: 0 18px; gap: 14px; }
+            .main-nav a { padding: 6px 9px; font-size: var(--font-size-xs); }
+            .logo-text { font-size: 1rem; } .logo-icon { width: 30px; height: 30px; }
+            .banner-main-title { font-size: 1.8rem; letter-spacing: 0.4px; }
+            .banner-subtitle { font-size: var(--font-size-sm); }
+            .banner-section { min-height: 360px; }
+            .banner-logo-img { width: 140px; height: 140px; }
+            .safety-card { padding: 24px 22px; }
+            .banner-section::before, .banner-section::after { display: none; }
+            .banner-main-title::after { width: 50px; height: 2px; }
+            .pentagon-img { width: 30%; }
+            .section-divider { margin: var(--space-2xl) auto var(--space-md); }
+            .safety-section { margin: var(--space-xl) auto var(--space-2xl); gap: 36px; }
+            .site-footer { margin-top: var(--space-xl); }
+        }
+        @media (max-width: 820px) {
+            .site-header { height: 54px; }
+            .header-inner { padding: 0 14px; }
+            .main-nav {
+                position: fixed; top: 54px; left: 0; right: 0; background-color: var(--bg-surface);
+                flex-direction: column; padding: 8px 0; gap: 0; border-bottom: 1px solid var(--border-light);
+                transform: translateY(-120%); transition: transform var(--transition-smooth);
+                z-index: 999; height: auto; box-shadow: none;
+            }
+            .main-nav.mobile-open { transform: translateY(0); }
+            .main-nav li { width: 100%; height: auto; }
+            .main-nav a { padding: 12px 20px; font-size: var(--font-size-sm); width: 100%; border-bottom: none; border-left: 3px solid transparent; border-radius: 0; top: 0; }
+            .main-nav a:hover { border-left-color: var(--accent-teal); border-bottom-color: transparent; background-color: var(--bg-nav-hover); }
+            .mobile-menu-trigger { display: flex; }
+            .banner-content { flex-direction: column; text-align: center; gap: 24px; padding: 36px 18px; }
+            .banner-text { text-align: center; }
+            .banner-main-title { font-size: 1.6rem; letter-spacing: 0.3px; }
+            .banner-subtitle { font-size: var(--font-size-xs); letter-spacing: 0.3px; }
+            .banner-section { min-height: 290px; }
+            .banner-logo-img { width: 120px; height: 120px; }
+            .intro-section { padding: 28px 18px 20px; }
+            .intro-text { font-size: var(--font-size-sm); }
+            .decor-layer { display: none; }
+            .pentagon-wrapper { display: none; }
+            .illustration-container { min-height: auto; }
+            .mobile-illustration-grid {
+                display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+            }
+            .mobile-illustration-grid img {
+                width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+                border-radius: var(--radius-lg); border: 2px solid var(--border-light);
+                transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+            }
+            .mobile-illustration-grid img:hover { transform: scale(1.04); border-color: var(--accent-teal); }
+            .section-divider { padding: 0 18px; margin: var(--space-xl) auto var(--space-md); }
+            .safety-section { padding: 0 18px; margin: var(--space-lg) auto 36px; gap: 24px; }
+            .safety-card { flex: 1 1 100%; max-width: 100%; padding: 20px 18px; border-radius: var(--radius-sm); border-left-width: 3px; }
+            .safety-title { font-size: 1.05rem; }
+            .safety-text { font-size: var(--font-size-xs); }
+            .logo-icon { width: 28px; height: 28px; }
+            .logo-text { font-size: 0.92rem; }
+            .site-footer { padding: 18px 18px; margin-top: var(--space-lg); }
+            .banner-main-title::after { margin: 8px auto 0; width: 50px; }
+        }
+        @media (max-width: 480px) {
+            .site-header { height: 48px; }
+            .header-inner { padding: 0 10px; gap: 8px; }
+            .main-nav { top: 48px; }
+            .banner-content { padding: 24px 12px; gap: 18px; }
+            .banner-main-title { font-size: 1.3rem; letter-spacing: 0.2px; }
+            .banner-subtitle { font-size: 0.74rem; letter-spacing: 0.2px; }
+            .banner-section { min-height: 230px; }
+            .banner-logo-img { width: 90px; height: 90px; }
+            .intro-text { font-size: 0.84rem; line-height: 1.7; }
+            .mobile-illustration-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .safety-card { padding: 16px 14px; }
+            .safety-title { font-size: 0.95rem; }
+            .safety-text { font-size: 0.78rem; }
+            .logo-icon { width: 24px; height: 24px; }
+            .logo-text { font-size: 0.82rem; }
+            .intro-section::before { width: 36px; height: 2px; margin-bottom: 20px; }
+            .site-footer { padding: 14px 14px; margin-top: var(--space-md); }
+            .section-divider { margin: var(--space-lg) auto var(--space-sm); }
+            .safety-section { margin: var(--space-lg) auto var(--space-xl); gap: 20px; }
+            .banner-main-title::after { width: 40px; height: 2px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Chem Club Homepage">
+                    <img src="images/logo.jpg" alt="Fun Chemistry" class="logo-icon">
+                    <span class="logo-text">Fun Chemistry</span>
+                </a>
+                <nav>
+                    <ul class="main-nav" id="mainNav">
+                        <li><a href="index.html">Home 主页</a></li>
+                        <li><a href="aboutus.html">About us 关于我们</a></li>
+                        <li><a href="chemclub.html">Chem Club 化学社团</a></li>
+                        <li><a href="chemacademy.html">Chem Academy 化学学科活动</a></li>
+                        <li><a href="dcc.html">DCC-Daily Chem Club</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="banner-section" aria-label="Main banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1 class="banner-main-title">
+                        <span class="title-chem">Chem Fun,</span> Challenge Run<br>Let the Reaction Begin!
+                    </h1>
+                    <p class="banner-subtitle">Welcome to the official website of Chem Club SHSBNU!</p>
+                </div>
+                <img src="images/logo.jpg" alt="Chem Club Logo" class="banner-logo-img">
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <div class="decor-layer">
+                <svg viewBox="0 0 1200 900" preserveAspectRatio="none">
+                    <path d="M-50 100 C200 300, 400 50, 600 200 C800 350, 900 150, 1100 300 C1300 450, 1000 600, 700 550 C400 500, 300 700, 100 650 C-100 600, 0 850, 200 900"
+                          fill="none" stroke="var(--accent-teal)" stroke-width="2" stroke-dasharray="10 8" opacity="0.35" />
+                </svg>
+                <div class="decor-bubble" style="width:40px; height:40px; top:8%; left:5%;"></div>
+                <div class="decor-bubble" style="width:55px; height:55px; top:15%; left:85%; background: rgba(217,119,6,0.04); border-color: rgba(217,119,6,0.15);"></div>
+                <div class="decor-bubble" style="width:30px; height:30px; top:30%; left:12%;"></div>
+                <div class="decor-bubble" style="width:48px; height:48px; top:45%; left:90%;"></div>
+                <div class="decor-bubble" style="width:35px; height:35px; top:65%; left:8%; background: rgba(217,119,6,0.04); border-color: rgba(217,119,6,0.15);"></div>
+                <div class="decor-bubble" style="width:60px; height:60px; top:72%; left:80%;"></div>
+                <div class="decor-bubble" style="width:42px; height:42px; top:85%; left:25%;"></div>
+                <div class="decor-molecule" style="top:20%; left:25%; width:24px; height:24px;"></div>
+                <div class="decor-molecule" style="top:35%; left:70%; width:18px; height:18px; border-color: rgba(217,119,6,0.18);"></div>
+                <div class="decor-molecule" style="top:55%; left:15%;"></div>
+                <div class="decor-molecule" style="top:60%; left:60%; width:20px; height:20px;"></div>
+                <div class="decor-molecule" style="top:78%; left:50%; border-color: rgba(217,119,6,0.18);"></div>
+                <div class="decor-molecule" style="top:90%; left:70%; width:26px; height:26px;"></div>
+            </div>
+
+            <section class="intro-section" aria-label="Introduction">
+                <p class="intro-text">这是一个由高中生创建的网站。我们希望借此传播化学知识，把知识融入有趣实验与日常生活，激起大家对化学的兴趣。这也是化学社，化学学科活动，DCC Club的官方网站。</p>
+            </section>
+
+            <section class="illustration-section" aria-label="插图展示">
+                <div class="illustration-container">
+                    <div class="pentagon-wrapper">
+                        <!-- 椭圆居中，整体左移后的图片位置 -->
+                        <svg class="connector-ellipse" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <ellipse cx="50" cy="50" rx="43" ry="30" fill="none" stroke="var(--accent-teal)" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5" />
+                        </svg>
+                        <img src="images/ind-ill1.jpg" alt="插图 1" class="pentagon-img" style="left: 85%; top: 50%;">
+                        <img src="images/ind-ill2.jpg" alt="插图 2" class="pentagon-img" style="left: 65%; top: 75%;">
+                        <img src="images/ind-ill3.jpg" alt="插图 3" class="pentagon-img" style="left: 15%; top: 70%;">
+                        <img src="images/ind-ill4.jpg" alt="插图 4" class="pentagon-img" style="left: 15%; top: 30%;">
+                        <img src="images/ind-ill5.jpg" alt="插图 5" class="pentagon-img" style="left: 65%; top: 25%;">
+                    </div>
+                    <div class="mobile-illustration-grid">
+                        <img src="images/ind-ill1.jpg" alt="插图 1">
+                        <img src="images/ind-ill2.jpg" alt="插图 2">
+                        <img src="images/ind-ill3.jpg" alt="插图 3">
+                        <img src="images/ind-ill4.jpg" alt="插图 4">
+                        <img src="images/ind-ill5.jpg" alt="插图 5">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="safety-section" aria-label="Safety and rigor information">
+            <div class="safety-card">
+                <h2 class="safety-title">我们如何保证严谨与安全</h2>
+                <p class="safety-text">我们遵守学校实验规范，强调在教师指导下进行实验活动；在内容呈现中坚持负责任表达，不鼓励危险操作，不传播未经核实结论。</p>
+            </div>
+            <div class="safety-card">
+                <h2 class="safety-title">How We Ensure Rigor and Safety</h2>
+                <p class="safety-text">We adhere to school lab safety regulations, emphasize conducting experiments under teacher supervision; insist on responsible presentation in content, do not encourage dangerous operations, and do not spread unverified conclusions.</p>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p class="copyright">© 2026 Fun Chemistry</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            var trigger = document.getElementById('mobileMenuTrigger');
+            var nav = document.getElementById('mainNav');
+            if (trigger && nav) {
+                trigger.addEventListener('click', function() { nav.classList.toggle('mobile-open'); });
+                var navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(function(link) { link.addEventListener('click', function() { nav.classList.remove('mobile-open'); }); });
+                document.addEventListener('click', function(e) { if (!trigger.contains(e.target) && !nav.contains(e.target)) { nav.classList.remove('mobile-open'); } });
+            }
+        })();
+    </script>
+</body>
+</html>

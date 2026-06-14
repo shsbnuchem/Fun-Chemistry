@@ -1,0 +1,9 @@
+<title>酸雨系列第一期</title>
+<date>2026/2/19</date>
+<author>尉钰涵 唐泽霖 辛敏睿 孟禹萌 张若凡</author>
+<tag>绿色化学,科普</tag>
+<cover>blogs/illustr/acid-rain-1-c.png</cover>
+<header>blogs/illustr/acid-rain-1-h.jpg</header>
+<intro></intro>
+<main>
+</main>
