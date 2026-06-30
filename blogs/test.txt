@@ -1,0 +1,13 @@
+<title>这是一个测试文件</title>
+<author>Helium Toluene</author>
+<tag>实验,科普,化学</tag>
+<intro>This is a test document.</intro>
+<cover>blogs/illustr/test-c.jpg</cover>
+<header>blogs/illustr/test-h.jpg</header>
+<main>1145141919810
+<b>(1)Section One</b>
+gkwuwehdsfeu2ry 897389797771280yashljAHKJCDHkjvh sdjfhajshlhvlk sdjk;gjd;lzj;ajf;kh0yashljAHKJCDHkjvhsdjfhajshl hvlksdjk;gjd;lzj;ajf;kh0 yashljAHKJC DHkjvhsdjfhajshlhv lksdjk;gjd;lzj;ajf;kh0 yashljAHKJCDHkjv hsdjfhajshlhvlksdjk;gjd;lzj;ajf;kh 0yashljAHKJCDHkjv hsdjfhajshlhvlksdjk;gjd;lzj;a jf;kh0yashljA HKJCDHkjvhsdjfhajshlhvl ksdjk;gjd;lzj;ajf;kh0yashljAHKJCDHkjvhsdjfhajshlhvlksdj k;gjd;lzj;ajf;kh<i>iiiiii iiiiii</i>hhhhhhhh h<u>uuuuuuuuuuuuuu</u>
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+<image>blogs/illustr/test-1.jpg[50]</image>
+1111111111111111111111111<link>baidu.com[百度]</link>1111111111111111111111111111111111111111111111111111111
+</main>

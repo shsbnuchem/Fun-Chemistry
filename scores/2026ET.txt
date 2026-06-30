@@ -1,0 +1,2 @@
+<testname>2026-2027届学科活动及化学社团测评笔试分数查询</testname>
+<scr>{name=秦如新}{pwd=12345678}{title=秦如新：100分}{sheet=第一部分[Part A,20][Part B,30][Part C,30][总计,80]}{sheet=第二部分[Part D,10][Part E,10][总计,20]}{note=对成绩有疑问？请尽快联系社长们！}</scr>
