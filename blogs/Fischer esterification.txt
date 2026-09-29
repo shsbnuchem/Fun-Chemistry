@@ -1,0 +1,9 @@
+<title>费舍尔酯化</title>
+<date>2026/9/17</date>
+<author>胡正言 廖泽宸</author>
+<tag>有机化学,实验,科普</tag>
+<cover>blogs/illustr/plastic-c.jpg</cover>
+<header>blogs/illustr/plastic-h.jpg</header>
+<intro></intro>
+<main>
+</main>
