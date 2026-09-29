@@ -2,8 +2,8 @@
 <date>2026/9/17</date>
 <author>胡正言 廖泽宸</author>
 <tag>有机化学,实验,科普</tag>
-<cover>blogs/illustr/plastic-c.jpg</cover>
-<header>blogs/illustr/plastic-h.jpg</header>
+<cover>blogs/illustr/esterification-c.jpg</cover>
+<header>blogs/illustr/esterification-h.png</header>
 <intro></intro>
 <main>
 </main>
