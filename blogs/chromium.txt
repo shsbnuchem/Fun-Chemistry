@@ -35,4 +35,6 @@
 <image>blogs/illustr/chromium-9.png[50]</image>
 <image>blogs/illustr/chromium-10.png[50]</image>
 <b>温馨提示：铬（VI）具有较强毒性，请勿模仿本实验</b>
+
+<b>THE END.</b>
 </main>
