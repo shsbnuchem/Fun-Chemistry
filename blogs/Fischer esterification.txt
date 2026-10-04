@@ -4,6 +4,6 @@
 <tag>有机化学,实验,科普</tag>
 <cover>blogs/illustr/esterification-c.jpg</cover>
 <header>blogs/illustr/esterification-h.png</header>
-<intro></intro>
+<intro>上图是各种各样的香水，它们的香味是从哪里来的呢？让我们走进这次关于“酯”的实验吧！</intro>
 <main>
 </main>
