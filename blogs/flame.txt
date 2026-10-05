@@ -1,12 +1,12 @@
 <title>焰色反应</title>
 <author>唐泽霖 尉钰涵</author>
 <date>2025/12/11</date>
-<tag>实验,科普</tag>
+<tag>无机化学,实验,科普</tag>
 <cover>blogs/illustr/flame-c.png</cover>
 <header>blogs/illustr/flame-h.jpg</header>
 <intro>你是否曾好奇，为什么不同的金属在火焰中会呈现不同颜色？本文从光谱与能量的视角，解读焰色反应背后的科学原理。</intro>
 <main>
-<b>01实验原理</b>
+<b>01 实验原理</b>
 首先我们先来了解一下焰色反应背后能量的故事
 焰色反应的本质，就是金属离子在受热过程中发生的能量吸收与释放
 <image>blogs/illustr/flame-1.png[80]</image>
@@ -25,7 +25,7 @@
 锂：洋红色
 钙：砖红色
 <image>blogs/illustr/flame-5.jpg[30]</image>
-<b>02实验步骤</b>
+<b>02 实验步骤</b>
 取烧杯，在烧杯中加入20ml蒸馏水
 根据溶解度适量加入金属盐并形成饱和溶液（硼酸➡过饱和悬浊液）
 用滴管吸取约2-3ml饱和溶液和等量乙醇溶液在蒸发皿中混合

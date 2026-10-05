@@ -4,6 +4,10 @@
 <tag>有机化学,实验,科普</tag>
 <cover>blogs/illustr/esterification-c.jpg</cover>
 <header>blogs/illustr/esterification-h.png</header>
-<intro>上图是各种各样的香水，它们的香味是从哪里来的呢？让我们走进这次关于“酯”的实验吧！</intro>
+<intro>各种各样的香水，它们的香味是从哪里来的呢？让我们走进这次关于“酯”的实验吧！</intro>
 <main>
+<b>01 “酯”是什么？</b>
+在有机化学中，我们把酸和醇脱水缩合后形成的产物叫做“酯”，其通式为RCOOR'，官能团叫做“酯基”。（结构式如下图）
+<image>blogs/illustr/esterification-1.png[30]</image>
+酯类都难溶于水等极性溶剂，易溶于乙醇和乙醚等有机非极性溶剂，密度一般比水小，酯的熔点和沸点也要比相应的羧酸低。低分子量的酯是无色、易挥发的芳香液体，不同的酯也有不同的味道；而大分子量的饱和脂肪酸单酯常为无色无味的固体。
 </main>
