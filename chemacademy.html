@@ -160,6 +160,49 @@
         }
         .content-panel p { font-size: var(--font-size-base); line-height: 1.9; color: var(--text-secondary); margin-bottom: 14px; }
 
+        /* 活动简介面板中的小标题与列表 */
+        .content-panel .intro-subtitle {
+            font-size: var(--font-size-md);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 20px 0 8px;
+            letter-spacing: 0.4px;
+        }
+        .content-panel .intro-list {
+            list-style: none;
+            margin: 8px 0 16px;
+            padding-left: 4px;
+        }
+        .content-panel .intro-list li {
+            position: relative;
+            padding-left: 20px;
+            font-size: var(--font-size-base);
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+        .content-panel .intro-list li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-amber);
+            font-size: 0.7rem;
+            line-height: 2.3;
+        }
+        .content-panel .highlight-box {
+            background: rgba(180,95,42,0.06);
+            border-left: 3px solid var(--accent-amber);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            margin-top: 18px;
+        }
+        .content-panel .highlight-box p {
+            margin-bottom: 0;
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+
         /* Password gate */
         .password-gate {
             background: #fefcf7; border: 2px solid var(--border-accent); border-radius: var(--radius-md);
@@ -340,6 +383,21 @@
             <div class="content-area">
                 <div class="content-panel active" id="intro">
                     <h2>活动简介</h2>
+
+                    <p>我们的化学学科活动针对多种国际化学竞赛，如 <strong>JCCO</strong>（加拿大初级化学竞赛）、<strong>CCC</strong>（加拿大化学测评（中级））、<strong>CCO</strong>（加拿大化学测评（高级））、<strong>UKChO</strong>（英国化学测评）等。活动按照学段分层推进，目标明确、梯度清晰。</p>
+
+                    <p class="intro-subtitle">高一学段</p>
+                    <ul class="intro-list">
+                        <li><strong>高一上学期：</strong>以 JCCO 竞赛国际金奖为目标，培养同学们对化学竞赛的兴趣，并建立关于热力学、动力学、电化学、有机化学等诸多方面的初步了解。</li>
+                        <li><strong>高一下学期：</strong>以 CCC 金奖为目标，在基于 JCCO 领域之上，进一步培养同学们更加深度的思考能力。</li>
+                    </ul>
+
+                    <p class="intro-subtitle">高二学段</p>
+                    <p>对于高二学段的学生，大多以 UKChO、CCO 等国际顶尖难度竞赛的金奖为目标，重点培养同学们的深度推理、自主研究等要求更高的能力。</p>
+
+                    <div class="highlight-box">
+                        <p>⚠️ 由于时间问题，目前学科活动只支持在高二学段仍愿意参加 JCCO、CCC 竞赛的学生；至于备战 UKChO、CCO 等其他竞赛的学生，需要自行学习相关内容。</p>
+                    </div>
                 </div>
                 <div class="content-panel" id="join">
                     <h2>如何加入</h2>

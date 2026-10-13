@@ -1,0 +1,10 @@
+<title>海洋之心——铬离子价态的变化</title>
+<date>2025/11/1</date>
+<author>唐泽霖 尉钰涵</author>
+<tag>无机化学,实验,科普</tag>
+<cover>blogs/illustr/chromium-c.jpg</cover>
+<header>blogs/illustr/chromium-h.jpg</header>
+<intro>“海洋之心” 不同价态铬离子颜色变化 “海洋之心”是一个精彩的变色演示实验。通过依次向铬酸钾溶液中加入过氧化氢和稀硫酸，溶液的颜色会在黄色、橙色、蓝色与绿色之间迅速转变，直观地展示铬元素在不同价态下的特征颜色。</intro>
+<main>
+
+</main>

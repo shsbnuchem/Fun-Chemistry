@@ -262,6 +262,13 @@
         }
         .fullscreen-content { font-size: 18px; color: #000000; line-height: 2; white-space: pre-wrap; margin-bottom: 32px; }
 
+        /* 正文中的上/下角标 */
+        .fullscreen-content sub,
+        .fullscreen-content sup {
+            font-size: 0.72em;
+            line-height: 0;
+        }
+
         .inline-img {
             max-width: 100%;
             height: auto;
@@ -500,14 +507,9 @@
             }
 
             function processMainContent(mainText) {
-                let processed = mainText
-                    .replace(/<b>/g, '<b>')
-                    .replace(/<\/b>/g, '</b>')
-                    .replace(/<i>/g, '<i>')
-                    .replace(/<\/i>/g, '</i>')
-                    .replace(/<u>/g, '<u>')
-                    .replace(/<\/u>/g, '</u>');
+                let processed = mainText;
 
+                // 图片：<image>地址[宽度百分比]</image>
                 processed = processed.replace(/<image>(.*?)(?:\[(\d+)\])?<\/image>/g, (match, url, size) => {
                     const imgUrl = url.trim();
                     const imgSize = size ? parseInt(size, 10) : 100;
@@ -515,11 +517,18 @@
                     return `<img src="${imgUrl}" class="inline-img" style="width: ${width}%; height: auto;">`;
                 });
 
+                // 链接：<link>地址[显示文字]</link>
                 processed = processed.replace(/<link>(.*?)(?:\[(.*?)\])?<\/link>/g, (match, url, name) => {
                     const href = url.trim();
                     const displayName = name ? name.trim() : href;
                     return `<a href="${href}" target="_blank" class="inline-link">${displayName}</a>`;
                 });
+
+                // 下脚标：<d>x</d> -> <sub>x</sub>
+                processed = processed.replace(/<d>(.*?)<\/d>/gs, '<sub>$1</sub>');
+
+                // 上脚标：<h>x</h> -> <sup>x</sup>
+                processed = processed.replace(/<h>(.*?)<\/h>/gs, '<sup>$1</sup>');
 
                 return processed;
             }
