@@ -1,10 +1,41 @@
-<title>海洋之心——铬离子价态的变化</title>
-<date>2025/11/1</date>
-<author>唐泽霖 尉钰涵</author>
+<title>黄金雨</title>
+<date>2026/10/8</date>
+<author>胡正言 汤梓菽</author>
 <tag>无机化学,实验,科普</tag>
-<cover>blogs/illustr/chromium-c.jpg</cover>
-<header>blogs/illustr/chromium-h.jpg</header>
-<intro>“海洋之心” 不同价态铬离子颜色变化 “海洋之心”是一个精彩的变色演示实验。通过依次向铬酸钾溶液中加入过氧化氢和稀硫酸，溶液的颜色会在黄色、橙色、蓝色与绿色之间迅速转变，直观地展示铬元素在不同价态下的特征颜色。</intro>
+<cover>blogs/illustr/golden-c.png</cover>
+<header>blogs/illustr/golden-h.png</header>
+<intro>金黄色的晶体从溶液顶部飘落，如同黄金般的雨。如此美丽的现象是如何实现的呢？让我们走进今天的实验</intro>
 <main>
+<b>01黄金雨是什么？</b>
+黄金雨实质上是碘化铅（PbI<d>2</d>）溶解度随温度急剧变化的结果。在溶液缓慢冷却的过程中，无数闪亮的金色晶体会如雪花般缓缓析出，宛如在瓶中降下一场璀璨的“黄金雨”。
 
+<b>02实验过程</b>
+· 仪器准备：
+100ml烧杯、100ml锥形瓶、漏斗、滤纸、天平、药匙、磁力搅拌加热台
+· 药品准备：
+Pb(NO<d>3</d>)<d>2</d>（硝酸铅）、KI（碘化钾）、蒸馏水
+· 实验步骤：
+①称取约0.15g Pb(NO<d>3</d>)<d>2</d>（硝酸铅），加入50mL蒸馏水，充分搅拌至固体完全溶解。取另一个烧杯，称取约0.15g KI（碘化钾），另取50mL蒸馏水，同样搅拌至完全溶解。
+两种溶液均应呈现无色透明状，无任何肉眼可见的杂质。
+②将Pb(NO<d>3</d>)<d>2</d>（硝酸铅）与KI（碘化钾）两种无色透明溶液，缓缓倒入同一个锥形瓶中，可以观察到迅速析出大量明亮的金黄色沉淀。
+③将烧杯移至磁力搅拌加热台上，放入搅拌磁子，开始加热和磁力搅拌，设定温度为80℃，直至溶液完全变为无色透明。
+④停止加热和磁力搅拌，移动烧杯至桌面，待其稍微冷却，用漏斗配合滤纸过滤溶液至锥形瓶中。
+<image>blogs/illustr/golden-2.png[40]</image>
+⑤在其冷却的过程中，可以观察到六边形的金黄色晶体逐渐析出并飘落，如同黄金雨一般。
+
+<b>03实验原理</b>
+从反应方程式来看，这本质上是Pb(NO<d>3</d>)<d>2</d>（硝酸铅）与KI（碘化钾）的复分解反应(double replacement reaction)。
+<image>blogs/illustr/golden-1.png[80]</image>
+原本易溶于水的Pb(NO<d>3</d>)<d>2</d>（硝酸铅）和KI（碘化钾）之间发生复分解反应，生成了难溶于水的PbI<d>2</d>（碘化铅）沉淀。
+这种沉淀呈独特的薄片状六边形结构，这是其呈现耀眼金色的物理基石。 晶体表面极致光滑，产生强烈的镜面反射效果，厚度差异导致波长选择性反射，最终呈现迷人金橙色。
+
+<b>04成果展示</b>
+成果1：
+<image>blogs/illustr/golden-3.png[40]</image>
+成果2：
+<image>blogs/illustr/golden-4.png[40]</image>
+成果3：
+<image>blogs/illustr/golden-5.png[40]</image>
+
+<b>THE END.</b>
 </main>
