@@ -302,6 +302,29 @@
             padding: 8px 0;
         }
 
+        /* 资源排序按钮 */
+        .resource-item .sort-toggle {
+            display: none;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 14px;
+            padding: 3px 12px;
+            border: 1px solid var(--border-light);
+            border-radius: 999px;
+            background: var(--bg-card);
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+        }
+        .resource-item.open .sort-toggle { display: inline-flex; }
+        .resource-item .sort-toggle:hover { color: var(--accent-amber); border-color: var(--border-accent); background: rgba(180,95,42,0.06); }
+
         /* FOOTER */
         .site-footer {
             border-top: 1px solid var(--border-light); padding: 24px 32px; max-width: 1280px; margin: 0 auto;
@@ -592,6 +615,44 @@
                         item.classList.toggle('open');
                     });
                 }
+            });
+
+            // 资源排序：默认按时间倒序（最新一年在最上面），点击按钮在正序 / 倒序间切换
+            resourceItems.forEach(function(item) {
+                var summary = item.querySelector('.summary');
+                var list = item.querySelector('.file-list');
+                if (!summary || !list) return;
+
+                var links = Array.prototype.slice.call(list.querySelectorAll('a'));
+                if (links.length < 2) return; // 暂无资源的栏目不显示排序按钮
+
+                var descending = true;
+                var toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'sort-toggle';
+                toggle.title = '点击切换排序方式';
+
+                function yearOf(link) {
+                    var match = link.textContent.match(/(?:19|20)\d{2}/);
+                    return match ? parseInt(match[0], 10) : 0;
+                }
+
+                function applyOrder() {
+                    links.sort(function(a, b) {
+                        return descending ? yearOf(b) - yearOf(a) : yearOf(a) - yearOf(b);
+                    });
+                    links.forEach(function(link) { list.appendChild(link); });
+                    toggle.textContent = descending ? '按时间倒序 ↓' : '按时间正序 ↑';
+                }
+
+                toggle.addEventListener('click', function(e) {
+                    e.stopPropagation(); // 避免触发折叠面板的展开 / 收起
+                    descending = !descending;
+                    applyOrder();
+                });
+
+                summary.appendChild(toggle);
+                applyOrder();
             });
         })();
     </script>
