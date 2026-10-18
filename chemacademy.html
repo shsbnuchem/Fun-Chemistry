@@ -203,6 +203,21 @@
             color: var(--text-secondary);
         }
 
+        /* 加速课程外链 */
+        .content-panel .course-link {
+            display: inline-block;
+            margin: 2px 0 16px;
+            padding: 9px 18px;
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-sm);
+            background: rgba(180,95,42,0.07);
+            color: var(--accent-amber);
+            font-size: var(--font-size-base);
+            text-decoration: none;
+            transition: background var(--transition-fast), color var(--transition-fast);
+        }
+        .content-panel .course-link:hover { background: var(--accent-amber); color: #fff; }
+
         /* Password gate */
         .password-gate {
             background: #fefcf7; border: 2px solid var(--border-accent); border-radius: var(--radius-md);
@@ -416,6 +431,12 @@
                 </div>
                 <div class="content-panel" id="courses">
                     <h2>加速课程</h2>
+
+                    <p>高一新生入学前的暑假，我们还为同学们准备了加速课程，帮助大家更好地衔接高中阶段的学习。同学们可以在 bilibili 搜索 UP 主「二附HonorChem」，或直接点击下方链接进入主页。</p>
+
+                    <p><a class="course-link" href="https://space.bilibili.com/3706985834875125/upload/video" target="_blank" rel="noopener noreferrer">二附HonorChem 的 bilibili 主页</a></p>
+
+                    <p>该账号由我们化学组的老师开通，不仅有化学加速课程，还有课内知识点的讲解视频，欢迎同学们关注学习！</p>
                 </div>
                 <div class="content-panel" id="resources">
                     <div id="passwordGate" class="password-gate">
