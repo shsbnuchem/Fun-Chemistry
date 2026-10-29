@@ -1,0 +1,8 @@
+<title>焰色反应-2026</title>
+<author>胡正言 汤梓菽</author>
+<date>2026/10/22</date>
+<tag>无机化学,实验,科普</tag>
+<cover>blogs/illustr/flame-c.png</cover>
+<header>blogs/illustr/flame-h.jpg</header>
+<intro>你是否曾好奇，为什么不同的金属在火焰中会呈现不同颜色？本文从光谱与能量的视角，解读焰色反应背后的科学原理。</intro>
+<main>
