@@ -1,0 +1,70 @@
+<title>变化的铬</title>
+<author>胡正言 廖泽宸</author>
+<date>2026/11/19</date>
+<tag>无机化学,实验,科普</tag>
+<cover>blogs/illustr/ </cover>
+<header>blogs/illustr/chromium-h.jpg</header>
+<intro>铬是一种价态多样的过渡金属，这次的实验中，他们会给我们带来什么样的“相貌”呢？让我们走进这次“铬种铬样”的实验</intro>
+<main>
+<b>01 关于铬离子价态的介绍</b>
+铬的价态丰富，我们首先来介绍一下铬在溶液中的各种价态
+0价作为铬单质的最基础形态，与大多数过渡金属有一样的银白色金属光泽：
+<image>blogs/illustr/chromium-new1.png[30]</image>
++6价中铬酸根显黄色 重铬酸根显橙红色：
+*铬酸根
+<image>blogs/illustr/chromium-1.png[20]</image>
+*重铬酸根
+<image>blogs/illustr/chromium-2.png[30]</image>
++6价(过氧化铬)显蓝色（结构式如下图所示）
+<image>blogs/illustr/chromium-3.png[20]</image>
++3价铬离子显绿色
+<image>blogs/illustr/chromium-4.jpg[30]</image>
++2价铬离子显蓝色，是一种水合离子，化学式是[Cr(H<d>2</d>O)<d>6</d>]<h>2+</h>
+
+<b>02实验过程</b>
+这一次我们做了两个关于铬的实验，一个是铬的还原变色，另一个是海洋之心
+仪器准备：
+烧杯、试管、滴管、药匙
+药品准备：
+CrO<d>3</d>(三氧化铬)、H<d>2</d>SO<d>4</d> -2M(2摩尔每升硫酸)、H<d>2</d>O<d>2</d> -1.76M(约6%质量分数过氧化氢)、Zn(锌粒)
+实验步骤：
+<i>一.铬的还原变色</i>
+①向试管中加入2粒锌粒
+②用滴管取0.5ml CrO<d>3</d>溶液
+③用另一个滴管取2ml H<d>2</d>SO<d>4</d>，振荡
+④观察现象，整个过程约10min
+<i>二.海洋之心</i>
+①向烧杯A中加入0.1克铬酸钾，再加入150ml水
+②再加入约2ml的过氧化氢溶液
+③向烧杯B中加入15ml稀硫酸，将烧杯A的少量溶液加入烧杯B中，观察实验
+
+<b>03实验原理</b>
+<i>一.铬的还原变色</i>
+第一步：+6价（橙色/橙红色）→ +3价（绿色）
+三氧化铬（CrO₃）溶于硫酸后，主要以橙色的重铬酸根（Cr₂O₇²⁻）形式存在。加入锌粒后，锌作为还原剂给出电子，将+6价的铬还原为+3价。
+反应方程式如下：
+<u>Cr<d>2</d>O<d>7</d><h>2-</h>+14H<h>+</h>+3Zn → 2Cr<h>3+</h>+3Zn<h>2+</h>+7H<d>2</d>O</u>
+在这一步的变化中，还会出现棕红色的状态，是Cr<h>5+</h>的存在导致的，但这种说法还未得到官方认证。
+第二步：+3价（绿色）→ +2价（蓝色）
+如果锌粒和酸过量，绿色的+3价铬会被进一步还原为+2价铬
+反应方程式如下：
+2Cr<h>3+</h>+Zn → 2Cr<h>2+</h>+Zn<h>2+</h>
+由于二价铬以水合离子的形式存在，很不稳定，容易重新被氧化为Cr<h>3+</h>
+<i>二.海洋之心</i>
+用化学方程式解释如下：
+1、铬酸根+氢离子→重铬酸根+水
+<image>blogs/illustr/chromium-5.png[50]</image>
+2、重铬酸根+过氧化氢→过氧化铬（CrO5）+水
+<image>blogs/illustr/chromium-6.png[60]</image>
+3、过氧化铬在酸性条件下加速还原成+3价铬离子，而方程式最后产生的氧气也是反应中出现气泡的原因。
+<image>blogs/illustr/chromium-7.png[60]</image>
+
+<b>04成果展示</b>
+<i>一.铬的还原变色</i>
+
+<i>二.海洋之心</i>
+<image>blogs/illustr/chromium-new2.png[30]</image>
+
+
+<b>THE END.</b>
+</main>
